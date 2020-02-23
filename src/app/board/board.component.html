@@ -1,0 +1,19 @@
+<p>board works!</p>
+<div class="clearfix" >
+    <app-cell *ngFor="let cell of cells | slice: 0 : 3; let i = index"
+    (click)= "onMark(i)"
+    [value] = "cell"></app-cell><br>
+</div>
+
+<div class="clearfix">
+    <app-cell *ngFor="let cell of cells | slice: 3 : 6; let i = index"
+    (click)= "onMark(i+3)"
+    [value] = "cell"></app-cell><br>
+</div>
+
+<div class="clearfix">
+    <app-cell *ngFor="let cell of cells | slice: 6; let i = index "
+    (click)= "onMark(i+6)"
+    [value] = "cell"></app-cell>
+</div>
+

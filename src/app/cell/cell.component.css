@@ -1,0 +1,12 @@
+.cell {
+  height: 50px;
+  width: 50px;
+  background-color: skyblue;
+  float: left;
+  margin: 0 4px 4px 0;
+  color: black;
+  display: flex;
+}
+.xo {
+  font-size: 40px;
+}
